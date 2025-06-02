@@ -1,0 +1,46 @@
+export default function AchievementSection() {
+  return (
+    <>
+      <section id="achievements" className="section achievements">
+        <h2 className="section-title">Achievements</h2>
+        <div className="achievements-grid">
+          <div className="achievement-card">
+            <div className="achievement-icon">🏆</div>
+            <h3>Hackathon Finalist</h3>
+            <p>Finalist at Barclays Hack-O-Hire 2025</p>
+          </div>
+          <div className="achievement-card">
+            <div className="achievement-icon">🌱</div>
+            <h3>Agritech Solution Award</h3>
+            <p>
+              Best Solution in Agritech - National Hackathon by Innovation
+              Foundation
+            </p>
+          </div>
+          <div className="achievement-card">
+            <div className="achievement-icon">⭐</div>
+            <h3>HackerRank Coder</h3>
+            <p>5-Star Coder in Java</p>
+            <p> 4-Star Coder in Problem Solving</p>
+          </div>
+          <div className="achievement-card">
+            <div className="achievement-icon">📄</div>
+            <h3>Research Publication</h3>
+            <p>
+              Paper published in Scopus-indexed journal{" "}
+              <i>Communications on Applied Nonlinear Analysis</i>
+            </p>
+          </div>
+          <div className="achievement-card">
+            <div className="achievement-icon">📜</div>
+            <h3>Patent Published</h3>
+            <p>Smart Gear Recommendation System Using IoT</p>
+            <p>
+              <i>Application No: 202521004086</i>
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

@@ -1,0 +1,8 @@
+.poem-link{
+    display: block;
+    color:var(--accent-color);
+}
+
+.poem-link:hover{
+    text-decoration:underline;
+}
