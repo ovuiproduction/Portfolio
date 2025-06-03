@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin,faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export default function ContactSection() {
   return (
@@ -13,14 +13,23 @@ export default function ContactSection() {
               <a
                 href="https://www.linkedin.com/in/onkar-waghmode-85638125a/"
                 className="social-icon"
+                target="_blank"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a
                 href="https://github.com/ovuiproduction"
                 className="social-icon"
+                target="_blank"
               >
                 <FontAwesomeIcon icon={faGithub} />
+              </a>
+               <a
+                href="https://www.youtube.com/channel/UCmc4Unnm8X7gRZvP1850frw"
+                className="social-icon"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faYoutube} />
               </a>
             </div>
           </div>
