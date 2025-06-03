@@ -1,0 +1,35 @@
+Bio & Summary:
+Onkar Waghmode is a final-year B.Tech student in Computer Engineering at Vishwakarma Institute of Technology, Pune, with a CGPA of 9.06. He is passionate about full-stack development, machine learning, and natural language processing. Onkar enjoys building scalable and intelligent systems and has a strong interest in applying AI to enhance cybersecurity. His academic foundation includes data structures, algorithms, operating systems, and computer networks, enabling him to design solutions that are both technically robust and user-centric.
+
+Projects:
+
+1. Kisan-DSS – Decision Support System for Farmers
+Kisan-DSS is an AI-powered decision support system designed to help Indian farmers with intelligent crop selection, market identification, and government scheme discovery. It integrates real-time pricing trends and allows direct farmer-to-consumer interaction via a digital marketplace. Onkar developed the front-end dashboard and built the backend with Gemini API and machine learning models like Random Forest and Decision Tree.
+Tech Stack: React, Flask, MongoDB, Google Gemini API, Random Forest, Decision Tree
+GitHub: https://github.com/ovuiproduction/Kisan-DSS
+
+2. AI-ResearchMate – Co-Research Assistant with LLMs
+AI-ResearchMate is a smart assistant that simplifies academic research. It enables semantic paper search, interactive question answering, and AI content humanization using large language models. It also includes an AI-content detector and a rewriting pipeline using BART to humanize AI-generated text, helping avoid detection in research submissions.
+Tech Stack: Python, FAISS, BART (HuggingFace), MongoDB
+GitHub: https://github.com/ovuiproduction/Research-Assistant
+
+3. GRE MasterGuide – Gamified Vocabulary Prep Platform
+GRE MasterGuide is a gamified learning platform that helps students prepare for the GRE vocabulary section. It provides daily word learning goals, revision tests, mnemonic-based word explorers, and an AI chatbot that answers vocabulary-related queries. It also tracks user progress through a personalized test plan.
+Tech Stack: React, Node.js, MongoDB
+GitHub: https://github.com/ovuiproduction/GRE-Vocabulary-Preparation-Guide
+
+Skills:
+Onkar is skilled in multiple programming languages including Python, Java, C, and C++. His core technical expertise includes full-stack web development using React, Node.js, Express.js, and Flask. He is also proficient in working with MongoDB and MySQL. In addition, Onkar has a strong background in building AI/ML systems with a focus on NLP, RAG systems, and information retrieval pipelines. He uses Git and GitHub for version control and collaboration.
+
+Achievements:
+- Finalist at Barclays Hack-O-Hire 2025
+- Winner of the Best Agritech Solution award at a national hackathon hosted by the Innovation Foundation
+- 5-Star Java Coder on HackerRank
+- 4-Star Problem Solving Coder on HackerRank
+- Published a research paper in a Scopus-indexed journal: Communications on Applied Nonlinear Analysis (DOI: https://doi.org/10.52783/cana.v31.762)
+- Published patent titled “Smart Gear Recommendation System Using IoT” (Application No: 202521004086)
+
+Education:
+- B.Tech in Computer Engineering – Vishwakarma Institute of Technology, Pune (2022–2026) – CGPA: 9.06
+- 12th Standard – D.B.F. Dayanand College, Solapur – 87%
+- 10th Standard – New English School, Uplai, Solapur – 93.20%

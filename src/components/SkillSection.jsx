@@ -40,6 +40,7 @@ export default function SkillSection() {
               {[
                 { name: "React", level: "90%", icon: "fab fa-react" },
                 { name: "Node.js", level: "85%", icon: "fab fa-node-js" },
+                 { name: "Falsk", level: "75%", icon: "fas fa-server" },
                 { name: "MongoDB", level: "80%", icon: "fas fa-database" },
                 { name: "MySQL", level: "75%", icon: "fas fa-database" },
                 {
@@ -54,7 +55,7 @@ export default function SkillSection() {
                 },
                 { name: "NLP", level: "80%", icon: "fas fa-language" },
                 { name: "RAG", level: "85%", icon: "fas fa-book-open" },
-                { name: "FAISS", level: "75%", icon: "fas fa-search" },
+                // { name: "FAISS", level: "75%", icon: "fas fa-search" },
               ].map((skill, index) => (
                 <div className="skill-item" key={index}>
                   <div className="skill-info">

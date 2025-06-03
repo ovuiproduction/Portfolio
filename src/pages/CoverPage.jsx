@@ -18,6 +18,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import IntroSection from "../components/IntroSection";
 import HobbySection from "../components/HobbySection";
+import ChatBot from "../components/ChatBot";
 
 export default function CoverPage() {
   return (
@@ -38,6 +39,8 @@ export default function CoverPage() {
 
         <HobbySection />
 
+        <ChatBot/>
+    
         <ContactSection />
       </main>
 

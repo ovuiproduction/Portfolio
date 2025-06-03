@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <title>Onkar Waghmode</title>
-</head>
-<body>
+    <style>
+      .cursor {
+        position: fixed;
+        width: 12px;
+        height: 12px;
+        background: linear-gradient(45deg, white, white);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 1000;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 10px rgba(7, 2, 72, 0.8), 0 0 20px rgba(5, 6, 82, 0.5);
+      }
+      .trail {
+        position: fixed;
+        width: 6px;
+        height: 6px;
+        background: white;
+        border-radius: 50%;
+        pointer-events: none;
+        animation: sparkle 0.6s ease-out forwards;
+        box-shadow: 0 0 8px white;
+      }
+      @keyframes sparkle {
+        0% {
+          opacity: 0.7;
+          transform: scale(1) rotate(0deg);
+        }
+        50% {
+          opacity: 0.9;
+          transform: scale(1.2) rotate(180deg);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0.3) rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
     <div id="root"></div>
-</body>
+    <div class="cursor" id="cursor"></div>
+
+    <script>
+      const cursor = document.getElementById("cursor");
+      const trails = [];
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+
+        const trail = document.createElement("div");
+        trail.className = "trail";
+        trail.style.left = e.clientX + "px";
+        trail.style.top = e.clientY + "px";
+        document.body.appendChild(trail);
+        trails.push(trail);
+
+        setTimeout(() => {
+          trail.remove();
+          trails.shift();
+        }, 600);
+      });
+
+      document.addEventListener("mouseleave", () => {
+        trails.forEach((trail) => trail.remove());
+        trails.length = 0;
+      });
+    </script>
+  </body>
 </html>
