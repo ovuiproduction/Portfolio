@@ -1,87 +1,5 @@
-// import { useState } from "react";
-// import logo from "../static/images/logo.png";
-
-// export default function Header() {
-//   const [menuBar, setMenuBar] = useState(false);
-
-//   const handleManuBtn = () => {
-//     if (menuBar == true) setMenuBar(false);
-//     else setMenuBar(true);
-//   };
-
-//   return (
-//     <>
-//       <header className="header">
-//         <nav className="navbar">
-//           <div className="logo-container">
-//             <img src={logo} alt="Logo" className="logo" />
-//             <h1 className="logo-text">Onkar</h1>
-//           </div>
-
-//           <div className="nav-items">
-//             <ul className="nav-links">
-//               <li>
-//                 <a href="#about">About Me</a>
-//               </li>
-//               <li>
-//                 <a href="#projects">Projects</a>
-//               </li>
-//               <li>
-//                 <a href="#skills">Skills</a>
-//               </li>
-//               <li>
-//                 <a href="#education">Education</a>
-//               </li>
-//               <li>
-//                 <a href="#achievements">Achievements</a>
-//               </li>
-//               <li>
-//                 <a href="#contact">Contact</a>
-//               </li>
-//             </ul>
-
-//             <div className="mobile-menu">
-//               <button onClick={handleManuBtn} className="menu-bar-btn">
-//                 <div className="menu-bar"></div>
-//                 <div className="menu-bar"></div>
-//                 <div className="menu-bar"></div>
-//               </button>
-//             </div>
-
-//             {menuBar && (
-//               <>
-//                 <div className="menu-list-container">
-//                   <ul className="menu-list">
-//                     <li>
-//                       <a href="#about">About Me</a>
-//                     </li>
-//                     <li>
-//                       <a href="#projects">Projects</a>
-//                     </li>
-//                     <li>
-//                       <a href="#skills">Skills</a>
-//                     </li>
-//                     <li>
-//                       <a href="#education">Education</a>
-//                     </li>
-//                     <li>
-//                       <a href="#achievements">Achievements</a>
-//                     </li>
-//                     <li>
-//                       <a href="#contact">Contact</a>
-//                     </li>
-//                   </ul>
-//                 </div>
-//               </>
-//             )}
-//           </div>
-//         </nav>
-//       </header>
-//     </>
-//   );
-// }
-
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../static/images/logo.png";
 
 export default function Header() {
@@ -115,10 +33,12 @@ export default function Header() {
     <>
       <header className="header" ref={headerRef}>
         <nav className="navbar">
+          <a href="/">
           <div className="logo-container">
             <img src={logo} alt="Logo" className="logo" />
             <h1 className="logo-text">Onkar</h1>
           </div>
+          </a>
 
           <div className="nav-items">
             <ul className="nav-links">
