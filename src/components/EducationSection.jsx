@@ -8,7 +8,7 @@ export default function EducationSection() {
             <h3>B.Tech Computer Engineering</h3>
             <p>Vishwakarma Institute Of Technology, Pune</p>
             <p>2022-2026</p>
-            <p>Current CGPA : 9.06</p>
+            <p>Current CGPA : 9.1</p>
           </div>
           <div className="timeline-item">
             <h3>Higher Secondary board</h3>

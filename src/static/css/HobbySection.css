@@ -6,3 +6,7 @@
 .poem-link:hover{
     text-decoration:underline;
 }
+
+.professional-card{
+    cursor: pointer;
+}

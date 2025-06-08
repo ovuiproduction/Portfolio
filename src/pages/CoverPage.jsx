@@ -7,6 +7,7 @@ import "../static/css/footer.css";
 import "../static/css/AboutSection.css";
 import "../static/css/IntroSection.css";
 import "../static/css/HobbySection.css";
+import "../static/css/PoemSection.css";
 
 import SkillSection from "../components/SkillSection";
 import ProjectSection from "../components/ProjectSection";

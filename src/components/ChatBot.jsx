@@ -85,7 +85,7 @@ export default function ChatBot() {
       {chatBotDisplay && (
         <div className="chatbot-container">
           <div className="chatbot-header">
-            <h3>AI Assistant</h3>
+            <h3>Onkar<span style={{color:'red',fontSize:'10px',padding:'1rem'}}>(Under Development)</span></h3>
             <button className="close-btn" onClick={handleClose}>
               ×
             </button>
@@ -120,7 +120,7 @@ export default function ChatBot() {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               onKeyPress={handleKeyPress}
-              placeholder="Type your message..."
+              placeholder="Ask me anything about Onkar..."
               disabled={isLoading}
             />
             <button

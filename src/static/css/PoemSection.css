@@ -1,0 +1,363 @@
+/* ========== POEMS MODAL STYLES ========== */
+
+/* Modal Overlay */
+.modal-overlay-poem{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  transition: opacity 0.3s ease;
+}
+
+/* Modal Container */
+.modal-container-poem {
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  border-radius: 16px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  color: #e0e1dd;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+.modal-container-poem {
+  transform: translateY(0);
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(13, 27, 42, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+.tabs {
+  display: flex;
+  gap: 15px;
+  background: rgba(26, 38, 57, 0.7);
+  padding: 5px;
+  border-radius: 50px;
+}
+.tab {
+  background: transparent;
+  border: none;
+  color: #778da9;
+  font-size: 1rem;
+  padding: 8px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+.tab.active {
+  background: #415a77;
+  color: #e0e1dd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.tab:focus-visible {
+  outline: 2px solid #778da9;
+  outline-offset: 3px;
+}
+.back-button {
+  background: rgba(65, 90, 119, 0.4);
+  border: 1px solid rgba(224, 225, 221, 0.1);
+  color: #e0e1dd;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+.back-button:hover {
+  background: rgba(65, 90, 119, 0.6);
+}
+.back-button:focus-visible {
+  outline: 2px solid #778da9;
+  outline-offset: 3px;
+}
+.close-button {
+  background: rgba(224, 225, 221, 0.1);
+  border: none;
+  color: #e0e1dd;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close-button:hover {
+  background: rgba(224, 225, 221, 0.2);
+  transform: rotate(90deg);
+}
+.close-button:focus-visible {
+  outline: 2px solid #778da9;
+  outline-offset: 3px;
+}
+
+/* Modal Main Content */
+.modal-main {
+  padding: 30px;
+  overflow-y: auto;
+  flex: 1;
+  position: relative;
+}
+.poem-list {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.4s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.list-title {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #778da9;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 10px;
+}
+.list-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #415a77;
+}
+.poem-item {
+  padding: 18px 20px;
+  background: rgba(26, 38, 57, 0.5);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 4px solid #415a77;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.poem-item:hover {
+  background: rgba(65, 90, 119, 0.3);
+  transform: translateX(5px);
+  border-left-color: #778da9;
+}
+.poem-item-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.author {
+  font-size: 0.9rem;
+  color: #778da9;
+  font-style: italic;
+}
+.poem-content {
+  padding: 10px;
+  animation: slideIn 0.4s ease;
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.poem-title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #e0e1dd;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+}
+.poem-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: #415a77;
+  border-radius: 3px;
+}
+.poem-author {
+  color: #778da9;
+  margin-bottom: 30px;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+.poem-text {
+  line-height: 1.9;
+  white-space: pre-line;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+.poem-text p {
+  margin-bottom: 1.5em;
+  position: relative;
+  padding-left: 20px;
+}
+.poem-text p::before {
+  content: "❝";
+  position: absolute;
+  left: 0;
+  top: -5px;
+  color: #415a77;
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(13, 27, 42, 0.9);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.footer-button {
+  background: rgba(65, 90, 119, 0.4);
+  border: 1px solid rgba(224, 225, 221, 0.1);
+  color: #e0e1dd;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.footer-button:hover {
+  background: rgba(65, 90, 119, 0.85);
+  transform: translateY(-2px);
+}
+.footer-button:active {
+  transform: translateY(0);
+}
+.footer-button.active {
+  background: rgba(65, 90, 119, 0.9);
+  box-shadow: 0 0 15px rgba(65, 90, 119, 0.5);
+}
+.footer-button:focus-visible {
+  outline: 2px solid #778da9;
+  outline-offset: 3px;
+}
+.font-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(26, 38, 57, 0.5);
+  padding: 6px 12px;
+  border-radius: 30px;
+}
+.font-icon {
+  color: #778da9;
+  margin-right: 5px;
+}
+.font-button {
+  background: rgba(224, 225, 221, 0.1);
+  border: none;
+  color: #e0e1dd;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.font-button:hover {
+  background: rgba(65, 90, 119, 0.6);
+}
+
+/* Scrollbar Styling */
+.modal-main::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-main::-webkit-scrollbar-track {
+  background: rgba(13, 27, 42, 0.5);
+}
+.modal-main::-webkit-scrollbar-thumb {
+  background: #415a77;
+  border-radius: 4px;
+}
+.modal-main::-webkit-scrollbar-thumb:hover {
+  background: #778da9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal-container { width: 95%; }
+  .modal-header { padding: 15px 20px; }
+  .tabs { gap: 5px; padding: 4px; }
+  .tab { padding: 6px 15px; font-size: 0.9rem; }
+  .modal-main { padding: 20px; }
+  .modal-footer {
+    padding: 12px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .footer-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+  .poem-title { font-size: 1.8rem; }
+  .poem-text p::before { top: -3px; font-size: 1rem; }
+}
+@media (max-width: 576px) {
+  .modal-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  .tabs { width: 100%; }
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .poem-title { font-size: 1.6rem; }
+  .poem-text p { padding-left: 15px; }
+  .poem-text p::before { left: -5px; }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.poem-text {
+  font-family: 'Segoe UI', 'Nirmala UI', 'Shree Devanagari 714', sans-serif;
+}
+.read-instruction{
+    color: var(--accent-color);
+}
