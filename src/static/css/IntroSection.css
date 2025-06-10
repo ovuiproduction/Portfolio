@@ -17,12 +17,12 @@
 .intro-title {
   color: var(--accent-color);
   font-size: 1.8rem;
-  margin-bottom:0.5rem;
+  margin-bottom: 0.5rem;
   font-weight: 400;
 }
 
-.intro-subtitle{
-  margin-bottom:1rem;
+.intro-subtitle {
+  margin-bottom: 1rem;
 }
 
 .intro-description {
@@ -71,7 +71,7 @@
 
 .photo-frame {
   position: relative;
-  width: 100%;
+  width: 80%;
   max-width: 400px;
   margin-left: auto;
 }
@@ -109,5 +109,35 @@
 
   .cta-buttons {
     justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .photo-frame {
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    margin-left: auto;
+  }
+
+  .profile-photo {
+    width: 100%;
+    height: 65vh;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+  }
+
+  .photo-frame::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--accent-color);
+    border-radius: 20px;
+    z-index: 1;
   }
 }
