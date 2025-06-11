@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faVideo } from "@fortawesome/free-solid-svg-icons";
 
@@ -212,7 +211,7 @@ export default function ProjectSection() {
           </div>
         </div>
         <div className="see-more-container">
-          <a href="/projects" className="see-more-btn">
+          <a href="/my-work" target="_blank" className="see-more-btn">
             See More Projects
           </a>
         </div>
